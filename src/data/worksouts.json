@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Bench Press",
+    "target": "Chest",
+    "group": "Upper Body"
+  },
+  {
+    "id": 2,
+    "name": "Bicep Curls",
+    "target": "Arms",
+    "group": "Upper Body"
+  },
+  {
+    "id": 3,
+    "name": "Leg Press",
+    "target": "Legs",
+    "group": "Lower Body"
+  }
+]

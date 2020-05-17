@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import workouts from "./data/worksouts.json";
+import Workout from "./Workout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div data-test-id="app-container" className="container">
+      <h1>Workouts</h1>
+      {workouts.map((workout) => {
+        return <Workout key={workout.id} data-test-id="workout" {...workout} />;
+      })}
     </div>
   );
 }
