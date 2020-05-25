@@ -1,4 +1,5 @@
 import React from "react";
+import { getDataTestAttribute } from "./helpers/attributeHelper";
 
 function Workout({ name, target, group }) {
   return (
